@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking | Snazzy Paws</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="booking">
+  <header>
+    <a href="index.html" class="logo">🐾 Snazzy Paws</a>
+    <nav class="nav-links">
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="booking.html">Booking</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="hamburger" id="menuToggle">☰</div>
+  </header>
+
+  <nav class="mobile-nav" id="mobileMenu">
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="booking.html">Booking</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="intro">
+    <h1>Book Your Appointment</h1>
+    <p>Fill in the details below to request a grooming appointment.</p>
+  </section>
+
+  <form class="booking-form">
+    <div class="form-group">
+      <label for="service">Choose Service</label>
+      <select id="service" name="service">
+        <option value="bath">Bath & Brush</option>
+        <option value="haircut">Haircut</option>
+        <option value="spa">Spa Package</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Optional Add-ons</label>
+      <label><input type="checkbox" name="addon" value="nail"> Nail Trim</label>
+      <label><input type="checkbox" name="addon" value="ear"> Ear Cleaning</label>
+      <label><input type="checkbox" name="addon" value="teeth"> Teeth Brushing</label>
+    </div>
+
+    <div class="form-group">
+      <label for="date">Preferred Date & Time</label>
+      <input type="datetime-local" id="date" name="date">
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="owner-name">Your Name</label>
+        <input type="text" id="owner-name" name="owner-name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="dog-name">Dog's Name</label>
+        <input type="text" id="dog-name" name="dog-name" required>
+
+        <label for="breed">Breed</label>
+        <input type="text" id="breed" name="breed">
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="notes">Special Instructions</label>
+      <textarea id="notes" name="notes" rows="4"></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit">Book Now</button>
+    </div>
+  </form>
+
+  <footer>
+    <div class="footer-info">
+      <p>&copy; 2025 Snazzy Paws Grooming</p>
+      <p>Open: Mon–Sat 9:00 AM – 5:00 PM</p>
+    </div>
+    <div class="socials">
+      <a href="#" class="fa fa-facebook" title="Facebook" target="_blank"></a>
+      <a href="#" class="fa fa-twitter" title="Twitter/X" target="_blank"></a>
+      <a href="#" class="fa fa-instagram" title="Instagram" target="_blank"></a>
+      <a href="#" class="fa fa-linkedin" title="LinkedIn" target="_blank"></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
